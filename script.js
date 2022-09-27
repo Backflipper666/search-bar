@@ -33,14 +33,21 @@ inputBox.onkeyup = (e) => {
             return data.toLocaleLowerCase().startsWith(userData.toLocaleLowerCase());
         })
         emptyArray = emptyArray.map((data) => {
+            console.log('suggBox length',suggBox.children.length)
             return data = '<li>'+ data +'</li>';
         })
         console.log(emptyArray)
         searchWrapper.classList.add('active')
+        
+        // suggBox.children[0].classList.remove('active')
+        
         showSuggestions(emptyArray);
         let allList = suggBox.querySelectorAll('li');
         for(let i = 0; i < allList.length; i++){
             allList[i].setAttribute("onclick", "select(this)")
+        }
+        for(let i = 5; i < allList.length; i++){
+            allList[i].setAttribute('style', 'display:none;visibility:hidden;')
         }
     }else {
         searchWrapper.classList.remove('active');
@@ -58,8 +65,10 @@ function select(element){
 function showSuggestions(list){
     let listData;
     if(!list.length){
+       
         userValue = inputBox.value;
         listData = '<li>'+userValue+'</li>';
+        
     }else{
         listData = list.join('')
     }

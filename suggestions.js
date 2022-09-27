@@ -1,5 +1,5 @@
 let suggestions = [
-    "Channel",
+/*     "Channel",
     "CodingLab",
     "CodingNepal",
     "YouTube",
@@ -24,10 +24,10 @@ let suggestions = [
     "How to start Gaming Channel",
     "How to start YouTube Channel",
     "What does HTML stands for?",
-    "What does CSS stands for?",
+    "What does CSS stands for?", */
 ];
 
-let repos = []
+/* let repos = []
 let url = `https://api.github.com/search/repositories?q=w`;
 const url2 = `https://api.github.com/search/repositories?q=react`;
 
@@ -43,6 +43,6 @@ fetch('https://api.github.com/repos/javascript-tutorial/en.javascript.info/commi
     const reposArray = obj.items
     console.log('full name is: ',reposArray[0].full_name)
     console.log('length: ', reposArray.length)
-  })
+  }) */
 
   

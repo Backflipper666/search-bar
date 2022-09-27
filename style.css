@@ -61,6 +61,7 @@ body{
     cursor: default;
     border-radius: 3px;
     display: none;
+    max-height: 220px;
 }
 .search-input.active .autocom-box li{
     display: block;
@@ -68,4 +69,14 @@ body{
 
 .autocom-box li:hover{
     background: #efefef;
+}
+
+.hidden{
+    display: none;
+    visibility: hidden;
+}
+
+.input-bar{
+    width: 500px;
+    height: 61px;
 }
